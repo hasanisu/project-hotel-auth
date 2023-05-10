@@ -1,3 +1,5 @@
+import Booking from "../components/Booking/Booking";
+
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
 const { default: Home } = require("../components/Home/Home");
@@ -12,6 +14,10 @@ export const routes = createBrowserRouter([
             {
                 path:'/',
                 element: <Home></Home>
+            },
+            {
+                path:'/booking/:id',
+                element: <Booking></Booking>
             },
             {
                 path:'/login',
