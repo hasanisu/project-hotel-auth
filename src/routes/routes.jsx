@@ -1,4 +1,5 @@
 import Booking from "../components/Booking/Booking";
+import PrivateRoutes from "./PrivateRoutes";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: Main } = require("../layout/Main");
@@ -17,7 +18,11 @@ export const routes = createBrowserRouter([
             },
             {
                 path:'/booking/:id',
-                element: <Booking></Booking>
+                element: <PrivateRoutes><Booking></Booking></PrivateRoutes>
+            },
+            {
+                path:'/booking',
+                element: <PrivateRoutes><Booking></Booking></PrivateRoutes>
             },
             {
                 path:'/login',
