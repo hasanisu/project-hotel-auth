@@ -17,14 +17,15 @@ const Header = () => {
   }
   
   return (
-    <div>
+    
       
-      <div className="navbar bg-neutral text-neutral-content ">
+      <div className="bg-neutral">
+        <div className="navbar bg-neutral text-neutral-content">
         
         <Link to="/" className="btn btn-ghost normal-case text-3xl">Toyo-Inn</Link>
         <Link to="/" className="btn btn-ghost normal-case text-xl">Home</Link>
         <Link to="/booking" className="btn btn-ghost normal-case text-xl">Booking</Link>
-        <Link to="/register" className="btn btn-ghost normal-case text-xl">Register</Link>
+        <Link to="/register" className="btn  btn-ghost normal-case text-xl ">Register</Link>
         {user?.email && <span>welcome {user.email}</span>}
         {user?.email ? 
         
@@ -33,14 +34,17 @@ const Header = () => {
         </button>
           : 
       <Link to="/login">
-          <button className="btn btn-outline">Login</button>
+          <button className="btn btn-outline ">Login</button>
       </Link>
           }
         
         
       </div>
+      </div>
+
       
-    </div>
+      
+    
   );
 };
 

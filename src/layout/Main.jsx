@@ -8,7 +8,7 @@ const Main = () => {
     return (
         <div>
            <Header></Header>
-           <img className='max-w-screen-sm md:w-full h-5/6 ' src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" />
+           <img className='w-full bg-img' src="https://www.berjayahotel.com/sites/default/files/colombo_2.jpg" alt="" />
            <Outlet></Outlet>
            <Footer></Footer>
         </div>
